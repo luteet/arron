@@ -129,7 +129,9 @@ li{
 a{ 
     text-decoration: none; 
 }
-
+.burger-wrp {
+    display: none;
+}
 ._btn {
     display: inline-block;
 

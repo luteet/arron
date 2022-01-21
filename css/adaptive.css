@@ -799,6 +799,7 @@
     .burger-wrp{
         z-index: 10000;
         /* margin-left: 50px; */
+        display: inline-block;
         position: relative;
     }
     .blur{
