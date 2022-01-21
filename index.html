@@ -19,8 +19,39 @@
     </script>
     <div class="wrapper">
     <div class="og"></div>
-    <div class="consult bid-sec">
-        <div class="close-wrp">
+    
+    <div class="consult-popup _popup" id="consult-popup">
+        <div class="consult-popup__wrapper _popup-wrapper">
+            <div class="consult-popup__bg _popup-bg _popup-close"></div>
+            <div class="consult-popup__body _popup-body">
+                <button type="button" class="consult-popup__close-btn _popup-close _popup-close-btn">
+                    ✕
+                </button>
+                <form class="consult-popup__form" action="../include_ajax/form_default.php" method="POST">
+                     <h2 class="consult-popup__form--title">
+                        Оставьте заявку на <br>
+                         <mark>
+                            бесплатную 
+                         </mark>
+                        консультацию
+                     </h2>
+                     <label class="consult-popup__form--label">
+                         <input type="text" class="consult-popup__form--input _input" name="name" placeholder="Имя" required oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+                     </label>
+                     <label class="consult-popup__form--label">
+                        <input type="tel" class="consult-popup__form--input _input" name="tel" placeholder="Тел: (___) __-__-__" required oninvalid="this.setCustomValidity('Введите номер телефона')" oninput="setCustomValidity('')">
+                    </label>
+                    <input type="hidden" name="language" value="ru">
+                    <input type="hidden" name="url" value="https://www.arron.md/reparatie-tehnica/">
+                    <input type="hidden" name="info" value="Solicitare apel telefonic de către meșter">
+                    <input type="hidden" name="info_secondary" value="Mesajul a fost expediat din LP reparatie tehnica">
+                    <button class="consult-popup__form--submit _btn">
+                        Получить консультацию
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="close-wrp">
             <img class="close-cont" src="img/x.png" alt="x">
         </div>
         <h4>Оставьте заявку на <span>бесплатную</span> консультацию</h4>
@@ -32,16 +63,38 @@
             <input type="hidden" name="info" value="Solicitare apel telefonic de către meșter">
             <input type="hidden" name="info_secondary" value="Mesajul a fost expediat din LP reparatie tehnica">
             <input class="subm-form" type="submit" value="Получить консультацию">
-        </form>
+        </form> -->
     </div>
-    <div class="succses">
+    
+    <div class="succses-popup _popup" id="succses-popup">
+        <div class="succses-popup__wrapper _popup-wrapper">
+            <div class="succses-popup__bg _popup-bg _popup-close"></div>
+            <div class="succses-popup__body _popup-body">
+                <button type="button" class="succses-popup__close-btn _popup-close _popup-close-btn">
+                    ✕
+                </button>
+                <div class="succses-popup__content">
+                    <img src="img/frame_152.png" alt="" class="succses-popup__content--img">
+                    <h4 class="succses-popup__content--title">
+                        Ваша заявка отправлена
+                    </h4>
+                    <div class="succses-popup__content--text">
+                        <p>
+                            Мы свяжемся с вами в ближайшее время
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="succses">
         <div class="close-wrp">
             <img class="close-cont close-cont-2" src="img/x.png" alt="x">
         </div>
         <img class="succses-img" src="img/frame_152.png" alt="check">
-        <h4>Ваша заявка отправлена</h4>
-        <p>Мы свяжемся с вами в ближайшее время</p>
-    </div>
+        <h4></h4>
+        <p></p>
+    </div> -->
     <header id="navbar">
         <nav class="header-nav">
             <div class="header-nav-container">
@@ -136,9 +189,9 @@
                         Большой склад и опытные мастера
                     </p>
                 </div>
-                <div class="consult-btn-wrp intro__info--link-wrap">
-                    <a href="#" onclick="return false;">Бесплатная консультация</a>
-                </div>
+                <a href="#consult-popup" class="intro__info--link _btn _btn-open-popup">
+                    Бесплатная консультация
+                </a>
             </div>
             <div class="intro__sale">
                 <div class="intro__sale--body">
@@ -996,43 +1049,7 @@
                 $("body").toggleClass('overlow');
             });
         }());
-        (function () {
-            const consult = document.querySelector('.consult-btn-wrp');
-            //const consult2 = document.querySelector('.consult-btn-wrp-2');
-            /* const consult3 = document.querySelector('.consult-btn-wrp-2-adapt'); */
-            const closeWrp = document.querySelector('.close-cont');
-            const submForm = document.querySelector('.subm-form');
-            const closeCont = document.querySelector('.close-cont-2');
-            consult.addEventListener('click', () => {
-                $(".og").toggleClass('op-back');
-                $(".consult").toggleClass('opct');
-                $("body").toggleClass('overlow');
-            });
-            /* consult2.addEventListener('click', () => {
-                $(".og").toggleClass('op-back');
-                $(".consult").toggleClass('opct');
-                $("body").toggleClass('overlow');
-            }); */
-            /* consult3.addEventListener('click', () => {
-                $(".og").toggleClass('op-back');
-                $(".consult").toggleClass('opct');
-                $("body").toggleClass('overlow');
-            }); */
-            closeWrp.addEventListener('click', () => {
-                $(".og").toggleClass('op-back');
-                $(".consult").toggleClass('opct');
-                $("body").toggleClass('overlow');
-            });
-            submForm.addEventListener('click', () => {
-                $(".consult").toggleClass('opct');
-                $(".succses").toggleClass('opct');
-            });
-            closeCont.addEventListener('click', () => {
-                $(".succses").toggleClass('opct');
-                $("body").toggleClass('overlow');
-                $(".og").toggleClass('op-back');
-            });
-        }());
+        
         var countDownDate = new Date("Jun 5, 2021 15:37:25").getTime();
 
         // Update the count down every 1 second
@@ -1076,6 +1093,7 @@
                 navbar.classList.remove("sticky");
             }
         }
+        myFunction();
     </script>
 
     <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LchdegUAAAAAMt_ESbsU74vqkvcve8iZxvEJVGK"></script> -->

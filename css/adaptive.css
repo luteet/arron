@@ -95,6 +95,23 @@
         border-radius: 15px;
     }
 
+    .consult-popup__form--title, .succses-popup__content--title {
+        font-size: 32px;
+    }
+
+    .consult-popup__form--title {
+        margin-bottom: 25px;
+    }
+
+    ._popup-body {
+        max-width: 500px;
+        min-height: 446px;
+    }
+
+    .consult-popup__form {
+        padding: 40px;
+    }
+
     
     
     .intro__bg--elem._2 {
@@ -120,6 +137,10 @@
 
     .intro__info--text {
         font-size: 24px;
+    }
+
+    .intro__info--link {
+        margin-top: 30px;
     }
 
     .intro__image {
@@ -317,6 +338,10 @@
 
     .intro__info--link-wrap {
         margin-left: 0; margin-right: 0;
+    }
+
+    .intro__info--link {
+        margin-top: 40px;
     }
     
     .intro__info--title::before {
