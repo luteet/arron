@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/fresco.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <title>Arron</title>
+</head>
+
+<body>
+    <script>
+        if(localStorage.getItem('theme') == 'dark') {
+            document.querySelector('body').classList.add('_dark-theme');
+        }
+    </script>
+    <div class="wrapper">
+    <div class="og"></div>
+    <div class="consult bid-sec">
+        <div class="close-wrp">
+            <img class="close-cont" src="img/x.png" alt="x">
+        </div>
+        <h4>Оставьте заявку на <span>бесплатную</span> консультацию</h4>
+        <form action="../include_ajax/form_default.php" method="POST">
+            <input type="text" name="name" placeholder="Имя" required oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+            <input type="tel" name="tel" placeholder="Тел: (___) __-__-__" required oninvalid="this.setCustomValidity('Введите номер телефона')" oninput="setCustomValidity('')">
+            <input type="hidden" name="language" value="ru">
+            <input type="hidden" name="url" value="https://www.arron.md/reparatie-tehnica/">
+            <input type="hidden" name="info" value="Solicitare apel telefonic de către meșter">
+            <input type="hidden" name="info_secondary" value="Mesajul a fost expediat din LP reparatie tehnica">
+            <input class="subm-form" type="submit" value="Получить консультацию">
+        </form>
+    </div>
+    <div class="succses">
+        <div class="close-wrp">
+            <img class="close-cont close-cont-2" src="img/x.png" alt="x">
+        </div>
+        <img class="succses-img" src="img/frame_152.png" alt="check">
+        <h4>Ваша заявка отправлена</h4>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+    </div>
+    <header id="navbar">
+        <nav class="header-nav">
+            <div class="header-nav-container">
+                <a href="#" class="header-logo"><img src="img/header-logo.png" alt="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-first"><a href="#services">Наши услуги</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#orders">Выполненные заказы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li class="nav-phone-adapt">
+                        <ul class="nav-phone nav-phone-ap">
+                            <li>
+                                <a href="tel:+38069827738">069 82 77 38</a>
+                                <a href="tel:+38079927738">079 92 77 38</a>
+                            </li>
+                            <li class="phone-li">
+                                <a href="#" class="link-phone _min-btn">
+                                    <svg viewBox="0 0 17 17" width="17px" height="17px"><g><path d="M13.9,11.6c-0.7-0.1-1.5-0.3-2.2-0.5C11.5,11,11.2,11,10.9,11c-0.3,0.1-0.5,0.2-0.8,0.4l-1,1 c-1.9-1.1-3.5-2.7-4.6-4.6l1-1C5.8,6.6,5.9,6.4,6,6.1C6,5.8,6,5.5,5.9,5.2C5.6,4.5,5.5,3.8,5.4,3.1C5.3,2.7,5.1,2.4,4.8,2.1 s-0.6-0.4-1-0.4H1.5c-0.2,0-0.4,0-0.6,0.1C0.7,2,0.5,2.1,0.4,2.3S0.1,2.6,0.1,2.8C0,3,0,3.2,0,3.4c0.3,2.4,1.1,4.6,2.4,6.6 c1.2,1.8,2.7,3.4,4.6,4.6c2,1.3,4.3,2.1,6.6,2.3c0.2,0,0.4,0,0.6-0.1c0.2-0.1,0.4-0.2,0.5-0.3c0.2-0.1,0.3-0.3,0.4-0.5 c0.1-0.2,0.1-0.4,0.1-0.6v-2.3c0-0.4-0.1-0.7-0.4-1C14.6,11.9,14.3,11.7,13.9,11.6z"/><path d="M14.7,2.3C13.5,1,11.8,0.2,10,0C9.5-0.1,9,0.3,8.9,0.9C8.9,1.4,9.3,1.9,9.8,2c1.3,0.1,2.6,0.7,3.5,1.7 c0.9,0.9,1.5,2.2,1.7,3.5c0.1,0.5,0.5,0.9,1,0.9c0,0,0.1,0,0.1,0C16.7,8,17.1,7.5,17,7C16.8,5.2,16,3.5,14.7,2.3z"/><path d="M11.2,5.8c0.4,0.4,0.7,0.9,0.8,1.5c0.1,0.5,0.5,0.8,1,0.8c0.1,0,0.1,0,0.2,0C13.7,8,14,7.4,13.9,6.9 c-0.2-0.9-0.6-1.8-1.3-2.5c-0.7-0.7-1.5-1.1-2.5-1.3C9.6,3,9,3.3,8.9,3.9S9.2,4.9,9.7,5C10.3,5.1,10.8,5.4,11.2,5.8z"/></g></svg>
+                                </a>
+                            </li>
+                            <li class="theme-li"><button class="change-theme _min-btn _theme-btn" title="Включить темную тему">
+                                <svg class="dark-icon" width="20px" height="20px" viewBox="0 0 32 32"><g><path d="M12.516,4.509A12,12,0,0,0,22.3,19.881,12.317,12.317,0,0,0,24,20a11.984,11.984,0,0,0,3.49-.514,12.1,12.1,0,0,1-9.963,8.421A12.679,12.679,0,0,1,16,28,12,12,0,0,1,12.516,4.509M16,0a16.5,16.5,0,0,0-2.212.15A16,16,0,0,0,16,32a16.526,16.526,0,0,0,2.01-.123A16.04,16.04,0,0,0,31.85,18.212,16.516,16.516,0,0,0,32,15.944,1.957,1.957,0,0,0,30,14a2.046,2.046,0,0,0-1.23.413A7.942,7.942,0,0,1,24,16a8.35,8.35,0,0,1-1.15-.08,7.995,7.995,0,0,1-5.264-12.7A2.064,2.064,0,0,0,16.056,0Z"/></g></svg>
+                                <svg class="light-icon" width="30" height="30" viewBox="0 0 512 512"><g><g><path d="m256,105.5c-83.9,0-152.2,68.3-152.2,152.2 0,83.9 68.3,152.2 152.2,152.2 83.9,0 152.2-68.3 152.2-152.2 0-84-68.3-152.2-152.2-152.2zm0,263.5c-61.4,0-111.4-50-111.4-111.4 0-61.4 50-111.4 111.4-111.4 61.4,0 111.4,50 111.4,111.4 0,61.4-50,111.4-111.4,111.4z"/><path d="m256,74.8c11.3,0 20.4-9.1 20.4-20.4v-23c0-11.3-9.1-20.4-20.4-20.4-11.3,0-20.4,9.1-20.4,20.4v23c2.84217e-14,11.3 9.1,20.4 20.4,20.4z"/><path d="m256,437.2c-11.3,0-20.4,9.1-20.4,20.4v22.9c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-22.9c0-11.2-9.1-20.4-20.4-20.4z"/><path d="m480.6,235.6h-23c-11.3,0-20.4,9.1-20.4,20.4 0,11.3 9.1,20.4 20.4,20.4h23c11.3,0 20.4-9.1 20.4-20.4 0-11.3-9.1-20.4-20.4-20.4z"/><path d="m54.4,235.6h-23c-11.3,0-20.4,9.1-20.4,20.4 0,11.3 9.1,20.4 20.4,20.4h22.9c11.3,0 20.4-9.1 20.4-20.4 0.1-11.3-9.1-20.4-20.3-20.4z"/><path d="M400.4,82.8L384.1,99c-8,8-8,20.9,0,28.9s20.9,8,28.9,0l16.2-16.2c8-8,8-20.9,0-28.9S408.3,74.8,400.4,82.8z"/><path d="m99,384.1l-16.2,16.2c-8,8-8,20.9 0,28.9 8,8 20.9,8 28.9,0l16.2-16.2c8-8 8-20.9 0-28.9s-20.9-7.9-28.9,0z"/><path d="m413,384.1c-8-8-20.9-8-28.9,0-8,8-8,20.9 0,28.9l16.2,16.2c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9l-16.2-16.2z"/><path d="m99,127.9c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9l-16.2-16.2c-8-8-20.9-8-28.9,0-8,8-8,20.9 0,28.9l16.2,16.2z"/></g></g></svg>
+                            </button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-phone">
+                <li><a href="tel:+38069827738">069 82 77 38</a></li>
+                <li class="sep">/</li>
+                <li><a href="tel:+38079927738">079 92 77 38</a></li>
+                <li class="phone-li">
+                    <a href="#" class="link-phone _min-btn">
+                        <svg viewBox="0 0 17 17" width="17px" height="17px"><g><path d="M13.9,11.6c-0.7-0.1-1.5-0.3-2.2-0.5C11.5,11,11.2,11,10.9,11c-0.3,0.1-0.5,0.2-0.8,0.4l-1,1 c-1.9-1.1-3.5-2.7-4.6-4.6l1-1C5.8,6.6,5.9,6.4,6,6.1C6,5.8,6,5.5,5.9,5.2C5.6,4.5,5.5,3.8,5.4,3.1C5.3,2.7,5.1,2.4,4.8,2.1 s-0.6-0.4-1-0.4H1.5c-0.2,0-0.4,0-0.6,0.1C0.7,2,0.5,2.1,0.4,2.3S0.1,2.6,0.1,2.8C0,3,0,3.2,0,3.4c0.3,2.4,1.1,4.6,2.4,6.6 c1.2,1.8,2.7,3.4,4.6,4.6c2,1.3,4.3,2.1,6.6,2.3c0.2,0,0.4,0,0.6-0.1c0.2-0.1,0.4-0.2,0.5-0.3c0.2-0.1,0.3-0.3,0.4-0.5 c0.1-0.2,0.1-0.4,0.1-0.6v-2.3c0-0.4-0.1-0.7-0.4-1C14.6,11.9,14.3,11.7,13.9,11.6z"/><path d="M14.7,2.3C13.5,1,11.8,0.2,10,0C9.5-0.1,9,0.3,8.9,0.9C8.9,1.4,9.3,1.9,9.8,2c1.3,0.1,2.6,0.7,3.5,1.7 c0.9,0.9,1.5,2.2,1.7,3.5c0.1,0.5,0.5,0.9,1,0.9c0,0,0.1,0,0.1,0C16.7,8,17.1,7.5,17,7C16.8,5.2,16,3.5,14.7,2.3z"/><path d="M11.2,5.8c0.4,0.4,0.7,0.9,0.8,1.5c0.1,0.5,0.5,0.8,1,0.8c0.1,0,0.1,0,0.2,0C13.7,8,14,7.4,13.9,6.9 c-0.2-0.9-0.6-1.8-1.3-2.5c-0.7-0.7-1.5-1.1-2.5-1.3C9.6,3,9,3.3,8.9,3.9S9.2,4.9,9.7,5C10.3,5.1,10.8,5.4,11.2,5.8z"/></g></svg>
+                    </a>
+                </li>
+                <li class="theme-li"><button class="change-theme _min-btn _theme-btn" title="Включить темную тему">
+                    <svg class="dark-icon" width="20px" height="20px" viewBox="0 0 32 32"><g><path d="M12.516,4.509A12,12,0,0,0,22.3,19.881,12.317,12.317,0,0,0,24,20a11.984,11.984,0,0,0,3.49-.514,12.1,12.1,0,0,1-9.963,8.421A12.679,12.679,0,0,1,16,28,12,12,0,0,1,12.516,4.509M16,0a16.5,16.5,0,0,0-2.212.15A16,16,0,0,0,16,32a16.526,16.526,0,0,0,2.01-.123A16.04,16.04,0,0,0,31.85,18.212,16.516,16.516,0,0,0,32,15.944,1.957,1.957,0,0,0,30,14a2.046,2.046,0,0,0-1.23.413A7.942,7.942,0,0,1,24,16a8.35,8.35,0,0,1-1.15-.08,7.995,7.995,0,0,1-5.264-12.7A2.064,2.064,0,0,0,16.056,0Z"/></g></svg>
+                    <svg class="light-icon" width="30" height="30" viewBox="0 0 512 512"><g><g><path d="m256,105.5c-83.9,0-152.2,68.3-152.2,152.2 0,83.9 68.3,152.2 152.2,152.2 83.9,0 152.2-68.3 152.2-152.2 0-84-68.3-152.2-152.2-152.2zm0,263.5c-61.4,0-111.4-50-111.4-111.4 0-61.4 50-111.4 111.4-111.4 61.4,0 111.4,50 111.4,111.4 0,61.4-50,111.4-111.4,111.4z"/><path d="m256,74.8c11.3,0 20.4-9.1 20.4-20.4v-23c0-11.3-9.1-20.4-20.4-20.4-11.3,0-20.4,9.1-20.4,20.4v23c2.84217e-14,11.3 9.1,20.4 20.4,20.4z"/><path d="m256,437.2c-11.3,0-20.4,9.1-20.4,20.4v22.9c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-22.9c0-11.2-9.1-20.4-20.4-20.4z"/><path d="m480.6,235.6h-23c-11.3,0-20.4,9.1-20.4,20.4 0,11.3 9.1,20.4 20.4,20.4h23c11.3,0 20.4-9.1 20.4-20.4 0-11.3-9.1-20.4-20.4-20.4z"/><path d="m54.4,235.6h-23c-11.3,0-20.4,9.1-20.4,20.4 0,11.3 9.1,20.4 20.4,20.4h22.9c11.3,0 20.4-9.1 20.4-20.4 0.1-11.3-9.1-20.4-20.3-20.4z"/><path d="M400.4,82.8L384.1,99c-8,8-8,20.9,0,28.9s20.9,8,28.9,0l16.2-16.2c8-8,8-20.9,0-28.9S408.3,74.8,400.4,82.8z"/><path d="m99,384.1l-16.2,16.2c-8,8-8,20.9 0,28.9 8,8 20.9,8 28.9,0l16.2-16.2c8-8 8-20.9 0-28.9s-20.9-7.9-28.9,0z"/><path d="m413,384.1c-8-8-20.9-8-28.9,0-8,8-8,20.9 0,28.9l16.2,16.2c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9l-16.2-16.2z"/><path d="m99,127.9c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9l-16.2-16.2c-8-8-20.9-8-28.9,0-8,8-8,20.9 0,28.9l16.2,16.2z"/></g></g></svg>
+                </button></li>
+            </ul>
+            <script>
+                if(localStorage.getItem('theme') == 'dark') {
+                    let themeBtn = document.querySelectorAll('._theme-btn');
+
+                    if(themeBtn) {
+                        themeBtn.forEach(element => {
+                            element.classList.remove('_light-theme');
+                            element.classList.add('_dark-theme');
+                        })
+                    }
+                }
+            </script>
+            <a href="#" class="burger-wrp" onclick="return false;">
+                <div class="burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                    <span class="burger__line burger__line_fourth"></span>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="intro__bg">
+            <div class="intro__bg--elem _1">
+                <img src="img/andr-line.png" alt="" class="intro__bg--img _decor-elem">
+            </div>
+            <div class="intro__bg--elem _2">
+                <img src="img/header-dsc.png" alt="" class="intro__bg--img _decor-elem">
+            </div>
+            <div class="intro__bg--elem _3">
+                <img src="img/header-dsc-2.png" alt="" class="intro__bg--img _decor-elem">
+            </div>
+            <div class="intro__bg--elem _4">
+                <img src="img/triangles.png" alt="" class="intro__bg--img _decor-elem">
+            </div>
+        </div>
+        <div class="intro__container _container">
+            <div class="intro__image">
+                <img src="img/header-img-1.png" alt="" class="intro__image--img">
+            </div>
+            <div class="intro__info">
+                <h1 class="intro__info--title">
+                    Проблемы с вашим устройством?
+                </h1>
+                <div class="intro__info--text">
+                    <p>
+                        Решаем любые проблемы!<br>
+                        Большой склад и опытные мастера
+                    </p>
+                </div>
+                <div class="consult-btn-wrp intro__info--link-wrap">
+                    <a href="#" onclick="return false;">Бесплатная консультация</a>
+                </div>
+            </div>
+            <div class="intro__sale">
+                <div class="intro__sale--body">
+                    <div class="intro__sale--procent intro__procent">
+                        50%
+                        <img src="img/fire.svg" width="24" alt="" class="intro__procent--icon">
+                    </div>
+                    <div class="intro__sale--content">
+                        <p class="intro__sale--text">
+                            скидка на ремонт телефонов, ноутбуков и планшетов до 
+                            <strong>-50%</strong></p>
+                        <hr>
+                        <div class="intro__sale--timer timer-wrp">
+                            <span class="timer-title">
+                                <strong>Конец акции</strong>
+                            </span>
+                            <script src="//megatimer.ru/get/405f2ebfffc13a618ba6b3876f503e5f.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-services">
+        <div class="min-services__container _container">
+            <ul class="min-services__list">
+                <li class="min-services__item">
+                    <div class="min-services__item--icon">
+                        <img src="img/adv1.svg" width="80" height="80" alt="" class="min-services__item--img">
+                    </div>
+                    <h2 class="min-services__item--title">
+                        Курьер по городу
+                    </h2>
+                    <div class="min-services__item--text">
+                        <p>
+                            Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.
+                        </p>
+                    </div>
+                </li>
+                <li class="min-services__item">
+                    <div class="min-services__item--icon">
+                        <img src="img/adv2.svg" width="80" height="80" alt="" class="min-services__item--img">
+                    </div>
+                    <h2 class="min-services__item--title">
+                        Курьер по городу
+                    </h2>
+                    <div class="min-services__item--text">
+                        <p>
+                            Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.
+                        </p>
+                    </div>
+                </li>
+                <li class="min-services__item">
+                    <div class="min-services__item--icon">
+                        <img src="img/adv3.svg" width="80" height="80" alt="" class="min-services__item--img">
+                    </div>
+                    <h2 class="min-services__item--title">
+                        Курьер по городу
+                    </h2>
+                    <div class="min-services__item--text">
+                        <p>
+                            Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="devices">
+        <h2 class="adapt-devices">Мы работаем<br>c устройствами:</h2>
+        <div class="devices-cont-wrp">
+            <h2>Мы работаем<br>c устройствами:</h2>
+            <ul class="devices-list">
+                <li class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/apple.png" alt="product">
+                        <img class="iphone-dots" src="img/iphone-dots.png" alt="dots">
+                        <div class="device-logo-wrp"><img src="img/apple-logo.png" alt="apple-logo"></div>
+                        <h5>Apple</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/android.png" alt="product">
+                        <img class="andr-dots" src="img/andr-line.png" alt="dots">
+                        <div class="device-logo-wrp"><img src="img/android-logo.png" alt="apple-logo"></div>
+                        <h5>Android</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="devices-cont-wrp devices-cont-wrp-pd">
+            <ul class="devices-list">
+                <li class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/clock.png" alt="product">
+                        <img class="clock-dots" src="img/andr-line.png" alt="dots">
+                        <img class="clock-desc" src="img/clock-desc.png" alt="dots">
+                        <h5>Гаджетами</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/note.png" alt="product">
+                        <img class="note-desc" src="img/note-desc.png" alt="dots">
+                        <img class="note-desc-2" src="img/note-desc-2.png" alt="dots">
+                        <h5>Ноутбуками</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="devices-list__item devices-list__item-adapt">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/pc.png" alt="product">
+                        <img class="pc-desc" src="img/pc-desc.png" alt="dots">
+                        <img class="pc-desc-2" src="img/pc-desc-2.png" alt="dots">
+                        <h5>Моноблоками и PC</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/pad.png" alt="product">
+                        <img class="pad-desc" src="img/dots-rine.png" alt="dots">
+                        <img class="pad-desc-2" src="img/pad-desc.png" alt="dots">
+                        <h5>Другими устройствами</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--dwdw-->
+        <div class="devices-cont-wrp devices-cont-wrp-adapt">
+            <h2>Мы работаем<br>c устройствами:</h2>
+            <div class="devices-list devices-list-adapt">
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/apple.png" alt="product">
+                        <img class="iphone-dots" src="img/iphone-dots.png" alt="dots">
+                        <div class="device-logo-wrp"><img src="img/apple-logo.png" alt="apple-logo"></div>
+                        <h5>Apple</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/android.png" alt="product">
+                        <img class="andr-dots" src="img/andr-line.png" alt="dots">
+                        <div class="device-logo-wrp"><img src="img/android-logo.png" alt="apple-logo"></div>
+                        <h5>Android</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/clock.png" alt="product">
+                        <img class="clock-dots" src="img/andr-line.png" alt="dots">
+                        <img class="clock-desc" src="img/clock-desc.png" alt="dots">
+                        <h5>Гаджетами</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/note.png" alt="product">
+                        <img class="note-desc" src="img/note-desc.png" alt="dots">
+                        <img class="note-desc-2" src="img/note-desc-2.png" alt="dots">
+                        <h5>Ноутбуками</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/pc.png" alt="product">
+                        <img class="pc-desc" src="img/pc-desc.png" alt="dots">
+                        <img class="pc-desc-2" src="img/pc-desc-2.png" alt="dots">
+                        <h5>Моноблоками и PC</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="devices-list__item">
+                    <a href="#">
+                        <div class="content-background"></div>
+                        <img class="product-img" src="img/pad.png" alt="product">
+                        <img class="pad-desc" src="img/dots-rine.png" alt="dots">
+                        <img class="pad-desc-2" src="img/pad-desc.png" alt="dots">
+                        <h5>Другими устройствами</h5>
+                        <div>
+                            <div class="arrow-devixe-wrp1">
+                                <div class="arrow-devixe-wrp2"><img src="img/red-arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!--dwdw-->
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-section-cont-wrp">
+            <div class="about-section-block">
+                <div>
+                    <h2>О компании Arron <img src="img/triangles.png" alt="triangles" class="about-section-dec"></h2>
+                    <h5>Узнайте о нашей компании больше из видео за 1 минуту.</h5>
+                </div>
+                <a href="#" class="video-but">Смотреть <img src="img/button-triangle.png" alt="caret"></a>
+            </div>
+            <div class="about-section-block-2">
+                <ul class="about-section-block-2-cont-wrp">
+                    <li>
+                        <a href="#">
+                            <img src="img/about-img-1.png" alt="">
+                            <h6>Выезжаем в любую точку Кишинева</h6>
+                            <p>Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/about-img-2.png" alt="">
+                            <h6>Работы от 30 минута</h6>
+                            <p>Время работы или настройки занимает от 30 минут до несколько часов.</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="about-section-block-2-cont-wrp">
+                    <li>
+                        <a href="#">
+                            <img src="img/about-img-3.png" alt="">
+                            <h6>Удобный способ оплаты</h6>
+                            <p>Оплата наличными или по перечеслению компаниям.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/about-img-4.png" alt="">
+                            <h6>Гарантия на все выполненые услуги</h6>
+                            <p>Запчасти, фотографии и сообщения под Вашим контролем. После работ инженер отдаст Вам
+                                старые запчасти.</p>
+                        </a>
+                    </li>
+                </ul>
+                <img class="wave" src="img/Wave.png" alt="wave">
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews-section-wrp">
+        <div class="reviews-dec-wrp">
+            <img src="img/header-dsc.png" alt="dec">
+            <img src="img/header-dsc-2.png" alt="dec" class="reviews-dec-2">
+        </div>
+        <div class="reviews-section">
+            <div class="reviews-section-heading-wrp">
+                <h3>Отзывы счастливых клиентов</h3>
+                <div class="arrows-reviews"></div>
+            </div>
+            <div class="slider-reviews slider-main">
+                <div class="slider-reviews-item">
+                    <img class="slide-rewiev-img" src="img/review-1.png" alt="review">
+                    <a href="https://www.youtube.com/watch?v=6T-PNteyFpM&feature=youtu.be" class="slider-caret-wrp fresco">
+                        <div>
+                            <img src="img/review-caret.png" alt="caret">
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-reviews-item">
+                    <img class="slide-rewiev-img" src="img/review-2.png" alt="review">
+                    <a href="https://www.youtube.com/watch?v=WaM0SReLDYY&feature=youtu.be" class="slider-caret-wrp fresco">
+                        <div>
+                            <img src="img/review-caret.png" alt="caret">
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-reviews-item">
+                    <img class="slide-rewiev-img" src="img/review-3.png" alt="review">
+                    <a href="https://www.youtube.com/watch?v=6Az_1b8iCcY&feature=youtu.be" class="slider-caret-wrp fresco">
+                        <div>
+                            <img src="img/review-caret.png" alt="caret">
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-reviews-item">
+                    <img class="slide-rewiev-img" src="img/review-4.png" alt="review">
+                    <a href="https://www.youtube.com/watch?v=sGCgzVcovq0&feature=youtu.be" class="slider-caret-wrp fresco">
+                        <div>
+                            <img src="img/review-caret.png" alt="caret">
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-reviews-item">
+                    <img class="slide-rewiev-img" src="img/review-5.png" alt="review">
+                    <a href="https://www.youtube.com/watch?v=D6rT0LyvHHk&feature=youtu.be" class="slider-caret-wrp fresco">
+                        <div>
+                            <img src="img/review-caret.png" alt="caret">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="orders" class="orders-section-wrp">
+        <div class="reviews-dec-wrp orders-dec-wrp">
+            <img src="img/andr-line.png" alt="dec">
+            <img src="img/header-dsc-2.png" alt="dec" class="reviews-dec-2-orders">
+        </div>
+        <div class="reviews-section">
+            <div class="reviews-section-heading-wrp">
+                <h3>Выполненные заказы <img src="img/triangles.png" alt="triangles" class="orders-section-dec"></h3>
+                <div class="arrows-orders"></div>
+            </div>
+            <div class="slider-orders slider-main">
+                <div class="slider-reviews-item">
+                    <img src="img/orders-1.png" alt="review">
+                </div>
+                <div class="slider-reviews-item">
+                    <img src="img/orders-2.png" alt="review">
+                </div>
+                <div class="slider-reviews-item">
+                    <img src="img/orders-3.png" alt="review">
+                </div>
+                <div class="slider-reviews-item">
+                    <img src="img/orders-2.png" alt="review">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="services__container _container">
+            <div class="services__body">
+                <div class="services__decor">
+                    <div class="services__decor--elem _1">
+                        <img src="img/header-dsc.png" alt="" class="services__decor--img _decor-elem">
+                    </div>
+                </div>
+                <h2 class="services__title">
+                    Что делать если ноутбук или телефон медлено работает
+                </h2>
+                <div class="services__block">
+                    <ul class="services__list">
+                        <li class="services__li">
+                            <h3 class="services__li--title">
+                                Наши услуги
+                            </h3>
+                        </li>
+                        <li class="services__li">
+                            ремонт ноутбуков
+                        </li>
+                        <li class="services__li">
+                            ремонт смартфонов
+                        </li>
+                        <li class="services__li">
+                            заправка и ремонт картриджей
+                        </li>
+                        <li class="services__li">
+                            установка СНПЧ
+                        </li>
+                        <li class="services__li">
+                            ремонт компьютеров
+                        </li>
+                        <li class="services__li">
+                            ремонт моноблоков
+                        </li>
+                    </ul>
+                    <ul class="services__list">
+                        <li class="services__li">
+                            ремонт планшетов
+                        </li>
+                        <li class="services__li">
+                            ремонт КПК
+                        </li>
+                        <li class="services__li">
+                            ремонт мониторов
+                        </li>
+                        <li class="services__li">
+                            ремонт принтеров
+                        </li>
+                        <li class="services__li">
+                            ремонт роутеров
+                        </li>
+                        <li class="services__li">
+                            восстановление жестких дисков
+                        </li>
+                        <li class="services__li">
+                            компьютерная помощь и IT аутсорсинги др.
+                        </li>
+                    </ul>
+                </div>
+                <div class="services__footer">
+                    <a href="#" class="services__footer--link _btn">
+                        Получить чек лист
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="arron-wrp-text">
+            <div>
+                <h2 class="arron-wrp-title">Что делать если ноутбук или телефон медлено работает</h2>
+            </div>
+        </div>
+        <div class="arron-wrp-li">
+            <ul class="services-list">
+                <li class="services-list__li">
+                    <h3 class="services-list__li--title">
+                        Наши услуги
+                    </h3>
+                </li>
+                <li class="services-list__li">
+                    ремонт ноутбуков
+                </li>
+                <li class="services-list__li">
+                    ремонт смартфонов
+                </li>
+                <li class="services-list__li">
+                    заправка и ремонт картриджей
+                </li>
+                <li class="services-list__li">
+                    установка СНПЧ
+                </li>
+                <li class="services-list__li">
+                    ремонт компьютеров
+                </li>
+                <li class="services-list__li">
+                    ремонт моноблоков
+                </li>
+            </ul>
+            <ul class="services-list">
+                <li class="services-list__li">
+                    ремонт планшетов
+                </li>
+                <li class="services-list__li">
+                    ремонт КПК
+                </li>
+                <li class="services-list__li">
+                    ремонт мониторов
+                </li>
+                <li class="services-list__li">
+                    ремонт принтеров
+                </li>
+                <li class="services-list__li">
+                    ремонт роутеров
+                </li>
+                <li class="services-list__li">
+                    восстановление жестких дисков
+                </li>
+                <li class="services-list__li">
+                    компьютерная помощь и IT аутсорсинги др.
+                </li>
+            </ul>
+        </div>
+        <img src="img/header-dsc.png" alt="dec" class="aaron-dec"> -->
+    </section>
+    <!-- <div class="consult-btn-wrp consult-btn-wrp-adapt consult-btn-wrp-2-adapt"><a href="#">Бесплатная консультация</a>
+    </div> -->
+    
+    <section class="work">
+        <div class="present">
+            <div class="present__container _container">
+                <h2 class="present__title _large-title">
+                    За каждый ремонт гарантировано<br> подарок на ваш выбор :
+                </h2>
+                <ul class="present__list">
+                    <li class="present__item">
+                        <div class="present__item--body">
+                            <div class="present__item--bg">
+                                <div class="present__item--bg-elem _decor-item" style="--y: 7%; --x: 16%;">
+                                    <img src="img/andr-line.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                                <div class="present__item--bg-elem _decor-item" style="--y: 40%; --x: 75%;">
+                                    <img src="img/clock-desc.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="present__item--image">
+                                <img src="img/present-1.png" width="200" alt="" class="present__item--img" loading="lazy">
+                            </div>
+                            <h3 class="present__item--title">
+                                Чехлы
+                            </h3>
+                            <div class="present__item--footer">
+                                <a href="#" class="present__item--link _btn">
+                                    Получить подарок
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="present__item">
+                        <div class="present__item--body">
+                            <div class="present__item--bg">
+                                <div class="present__item--bg-elem _decor-item" style="--y: 15%; --x: 15%;">
+                                    <img src="img/note-desc.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                                <div class="present__item--bg-elem _decor-item" style="--y: 40%; --x: 67%;">
+                                    <img src="img/note-desc-2.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="present__item--image">
+                                <img src="img/present-2.png" width="200" alt="" class="present__item--img" loading="lazy">
+                            </div>
+                            <h3 class="present__item--title">
+                                Защитные стёкла
+                            </h3>
+                            <div class="present__item--footer">
+                                <a href="#" class="present__item--link _btn">
+                                    Получить подарок
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="present__item">
+                        <div class="present__item--body">
+                            <div class="present__item--bg">
+                                <div class="present__item--bg-elem _decor-item" style="--y: 30%; --x: 18%;">
+                                    <img src="img/pc-desc.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                                <div class="present__item--bg-elem _decor-item" style="--y: 25%; --x: 65%;">
+                                    <img src="img/pc-desc-2.png" alt="" class="present__item--bg-img _decor-elem" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="present__item--image">
+                                <img src="img/present-3.png" width="200" alt="" class="present__item--img" loading="lazy">
+                            </div>
+                            <h3 class="present__item--title">
+                                Кабели
+                            </h3>
+                            <div class="present__item--footer">
+                                <a href="#" class="present__item--link _btn">
+                                    Получить подарок
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="present__item">
+                        <div class="present__item--body">
+                            <div class="present__item--image">
+                                <img src="img/present-4.png" width="200" alt="" class="present__item--img" loading="lazy">
+                            </div>
+                            <h3 class="present__item--title">
+                                Другие аксессуары
+                            </h3>
+                            <div class="present__item--footer">
+                                <a href="#" class="present__item--link _btn">
+                                    Получить подарок
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cit-wrp">
+            <img src="img/cc.png" alt="cc">
+            <h5>В нашей компании работают лучшие специалисты, которые прекрасно разбираются в современных технологиях и
+                имеют более 3-х лет опыта работы.</h5>
+            <img src="img/cc.png" alt="cc">
+        </div>
+        <div class="work-cont-wrp">
+            <div class="work-decor">
+                <div class="work-decor-elem">
+                    <img src="img/wave.svg" width="98" alt="" class="work-decor-img _decor-elem">
+                </div>
+            </div>
+            <div class="work-text-wrp">
+                <p>За счет этого мы гарантируем устранение любых неполадок и предоставляем гарантию на все выполненные
+                    работы.</p>
+                <p>Мы поможем не только восстановить работоспособность техники, но и подскажем, как избежать
+                    возникновения подобных поломок в будущем.</p>
+                <p>Квалифицированная консультация специалиста поможет безопасно пользоваться компьютером. В нашем штате
+                    работают опытные специалисты.</p>
+                <img src="img/triangles.png" alt="triangles">
+            </div>
+            <div class="work-slide-wrp">
+                <img class="work-dsc" src="img/header-dsc.png" alt="dec">
+                <div class="work-slide">
+                    <div class="work-slide__item">
+                        <img src="img/work-slide.png" alt="">
+                    </div>
+                    <div class="work-slide__item">
+                        <img src="img/work-slide.png" alt="">
+                    </div>
+                    <div class="work-slide__item">
+                        <img src="img/work-slide.png" alt="">
+                    </div>
+                </div>
+                <div class="work-slide-nav"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="bid-sec">
+        <div class="bid-sec-sale bid-procent">
+            <div class="bid-procent__body">
+                <div class="bid-procent__value">
+                    50%
+                </div>
+                <img src="img/fire.svg" alt="" class="bid-procent__icon">
+            </div>
+        </div>
+        <div class="bid-sec-body">
+            <h3>Записаться на диагностику в <mark>удобное</mark> вам время</h3>
+            <form action="../include_ajax/form_default.php" method="POST" class="consult-form">
+                 <fieldset class="consult-row">
+                    <label class="consult-label _min">
+                        <input type="text" class="consult-input _input" name="day" placeholder="День" required>
+                    </label>
+                     <label class="consult-label _min">
+                        <input type="text" class="consult-input _input" name="time" placeholder="Время" required>
+                    </label>
+                 </fieldset>
+                 <fieldset class="consult-row">
+                    <label class="consult-label _large">
+                        <input type="tel" class="consult-input _input" name="tel" placeholder="Телефон" required oninvalid="this.setCustomValidity('Введите номер телефона')" oninput="setCustomValidity('')">
+                    </label>
+                 </fieldset>
+                 <button class="consult-submit _btn _min">Записаться</button>
+                <!-- <input type="text" name="name" placeholder="Имя" required oninvalid="this.setCustomValidity('Введите Имя')" oninput="setCustomValidity('')">
+                <input type="tel" name="tel" placeholder="Тел: (___) __-__-__" required oninvalid="this.setCustomValidity('Введите номер телефона')" oninput="setCustomValidity('')">
+                <input type="hidden" name="language" value="ru">
+                <input type="hidden" name="url" value="https://www.arron.md/reparatie-tehnica/">
+                <input type="hidden" name="info" value="Solicitare apel telefonic de către meșter">
+                <input type="hidden" name="info_secondary" value="Mesajul a fost expediat din LP reparatie tehnica"> -->
+                <!-- <input type="submit" value="Получить скидку"> -->
+            </form>
+        </div>
+        <!-- <img class="bid-sale" src="img/sale-num.png" alt="sale"> -->
+        
+    </section>
+    <section class="add-contacts">
+        <div class="add-contacts__container _container">
+            <h2 class="add-contacts__title _section-title">
+                Наши контакты
+            </h2>
+            <div class="add-contacts__body">
+                <div class="add-contacts__slider">
+                    <div class="add-contacts__slider--nav"></div>
+                    <div class="add-contacts__slider--list">
+                        <div class="add-contacts__slide">
+                            <div class="add-contacts__slide--image">
+                                <img src="img/slide.jpg" loading="lazy" alt="" class="add-contacts__slide--img">
+                            </div>
+                        </div>
+                        <div class="add-contacts__slide">
+                            <div class="add-contacts__slide--image">
+                                <img src="img/slide.jpg" loading="lazy" alt="" class="add-contacts__slide--img">
+                            </div>
+                        </div>
+                        <div class="add-contacts__slide">
+                            <div class="add-contacts__slide--image">
+                                <img src="img/slide.jpg" loading="lazy" alt="" class="add-contacts__slide--img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-contacts__video">
+                    <video class="add-contacts__video--elem _video" id="add-contacts-video" width="400" height="300" controls>
+                        <source src="video/video.mp4" type='video/mp4'>
+                        <source src="video/video.webm" type='video/webm'>
+                    </video>
+                    <div class="add-contacts__video--preview _video-poster" data-video-id="add-contacts-video">
+                        <img src="img/video-preview.jpg" loading="lazy" class="add-contacts__video--img" alt="">
+                        <button class="add-contacts__video--play-btn">
+                            <svg viewBox="0 0 18 19">
+                                <path d="M3.75 4.7887C3.75 3.99753 4.62525 3.51969 5.29076 3.94752L12.9415 8.86585C13.5538 9.25949 13.5538 10.1546 12.9415 10.5482L5.29076 15.4665C4.62525 15.8944 3.75 15.4165 3.75 14.6254V4.7887Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="adress">
+        <div class="adress-row">
+            <div class="adress-elem adress__item">
+                <img src="img/phone-footer.png" alt="" class="adress__item--icon">
+                <a href="tel:+38069827738" class="adress__link">
+                    069 82 77 38
+                </a>
+                 / 
+                <a href="tel:+38079927738" class="adress__link">
+                    079 92 77 38
+                </a>
+            </div>
+            <div class="adress-elem adress__item">
+                <img src="img/phone-footer-2.png" alt="" class="adress__item--icon">
+                <a href="https://max10110.github.io/info@arron.md" class="adress__link">
+                    info@arron.md
+                </a>
+            </div>
+            <div class="adress-elem adress__item">
+                <img src="img/phone-footer-3.png" alt="" class="adress__item--icon">
+                <span class="adress__span">
+                    г. Кишинев, ул. Бэнулеску Бодони, д.33
+                </span>
+            </div>
+        </div>
+        <div class="adress-row">
+            <div class="adress-elem adress__rating">
+                <div class="adress__rating--body">
+                    <h3 class="adress__rating--title adress-min-title">
+                        Рейтинг сервиса
+                    </h3>
+                    <form action="#" class="adress__rating--form">
+                        <div class="adress__rating--list">
+                            <input type="radio" name="rating" value="5" id="rating-star-4" class="adress__rating--radio">
+                            <label for="rating-star-4" class="adress__rating--star">
+                                <svg width="31" height="30" viewBox="0 0 31 30">
+                                    <path d="M29.9625 11.5499C29.8339 11.1213 29.4054 10.7785 28.9339 10.7785L19.2482 10.5642L16.0339 1.4356C15.9054 1.00703 15.4768 0.707031 15.0054 0.707031C14.5339 0.707031 14.1054 1.00703 13.9768 1.4356L10.7625 10.5642L1.07679 10.7785C0.605357 10.7785 0.176786 11.0785 0.0482143 11.5499C-0.0803571 11.9785 0.0482143 12.4927 0.433929 12.7927L8.14821 18.6642L5.3625 27.9213C5.23393 28.3927 5.40536 28.8642 5.79107 29.1213C6.17679 29.3785 6.69107 29.4213 7.07679 29.1213L15.0054 23.6356L22.9768 29.1213C23.3625 29.3785 23.8768 29.3785 24.2625 29.1213C24.6482 28.8642 24.8196 28.3499 24.6911 27.9213L21.8625 18.6642L29.5768 12.7927C29.9625 12.4927 30.0911 12.0213 29.9625 11.5499Z"/>
+                                </svg>
+                            </label>
+                            <input type="radio" name="rating" value="4" id="rating-star-3" class="adress__rating--radio">
+                            <label for="rating-star-3" class="adress__rating--star">
+                                <svg width="31" height="30" viewBox="0 0 31 30">
+                                    <path d="M29.9625 11.5499C29.8339 11.1213 29.4054 10.7785 28.9339 10.7785L19.2482 10.5642L16.0339 1.4356C15.9054 1.00703 15.4768 0.707031 15.0054 0.707031C14.5339 0.707031 14.1054 1.00703 13.9768 1.4356L10.7625 10.5642L1.07679 10.7785C0.605357 10.7785 0.176786 11.0785 0.0482143 11.5499C-0.0803571 11.9785 0.0482143 12.4927 0.433929 12.7927L8.14821 18.6642L5.3625 27.9213C5.23393 28.3927 5.40536 28.8642 5.79107 29.1213C6.17679 29.3785 6.69107 29.4213 7.07679 29.1213L15.0054 23.6356L22.9768 29.1213C23.3625 29.3785 23.8768 29.3785 24.2625 29.1213C24.6482 28.8642 24.8196 28.3499 24.6911 27.9213L21.8625 18.6642L29.5768 12.7927C29.9625 12.4927 30.0911 12.0213 29.9625 11.5499Z"/>
+                                </svg>
+                            </label>
+                            <input type="radio" name="rating" value="2" id="rating-star-2" class="adress__rating--radio">
+                            <label for="rating-star-2" class="adress__rating--star">
+                                <svg width="31" height="30" viewBox="0 0 31 30">
+                                    <path d="M29.9625 11.5499C29.8339 11.1213 29.4054 10.7785 28.9339 10.7785L19.2482 10.5642L16.0339 1.4356C15.9054 1.00703 15.4768 0.707031 15.0054 0.707031C14.5339 0.707031 14.1054 1.00703 13.9768 1.4356L10.7625 10.5642L1.07679 10.7785C0.605357 10.7785 0.176786 11.0785 0.0482143 11.5499C-0.0803571 11.9785 0.0482143 12.4927 0.433929 12.7927L8.14821 18.6642L5.3625 27.9213C5.23393 28.3927 5.40536 28.8642 5.79107 29.1213C6.17679 29.3785 6.69107 29.4213 7.07679 29.1213L15.0054 23.6356L22.9768 29.1213C23.3625 29.3785 23.8768 29.3785 24.2625 29.1213C24.6482 28.8642 24.8196 28.3499 24.6911 27.9213L21.8625 18.6642L29.5768 12.7927C29.9625 12.4927 30.0911 12.0213 29.9625 11.5499Z"/>
+                                </svg>
+                            </label>
+                            <input type="radio" name="rating" value="1" id="rating-star-1" class="adress__rating--radio">
+                            <label for="rating-star-1" class="adress__rating--star">
+                                <svg width="31" height="30" viewBox="0 0 31 30">
+                                    <path d="M29.9625 11.5499C29.8339 11.1213 29.4054 10.7785 28.9339 10.7785L19.2482 10.5642L16.0339 1.4356C15.9054 1.00703 15.4768 0.707031 15.0054 0.707031C14.5339 0.707031 14.1054 1.00703 13.9768 1.4356L10.7625 10.5642L1.07679 10.7785C0.605357 10.7785 0.176786 11.0785 0.0482143 11.5499C-0.0803571 11.9785 0.0482143 12.4927 0.433929 12.7927L8.14821 18.6642L5.3625 27.9213C5.23393 28.3927 5.40536 28.8642 5.79107 29.1213C6.17679 29.3785 6.69107 29.4213 7.07679 29.1213L15.0054 23.6356L22.9768 29.1213C23.3625 29.3785 23.8768 29.3785 24.2625 29.1213C24.6482 28.8642 24.8196 28.3499 24.6911 27.9213L21.8625 18.6642L29.5768 12.7927C29.9625 12.4927 30.0911 12.0213 29.9625 11.5499Z"/>
+                                </svg>
+                            </label>
+                        </div>    
+                    </form>
+                    <div class="adress__rating--footer">
+                        <span class="adress__rating--count">
+                            4.8/5.0 -
+                        </span>
+                        <span class="adress__rating--length">
+                            <span class="adress__rating--length-value">
+                                403
+                            </span>
+                            голоса
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="adress-elem adress__social">
+                <div class="adress__social--body">
+                    <h3 class="adress__social--title adress-min-title">
+                        Мы в соцсетях
+                    </h3>
+                    <div class="adress__social--list">
+                        <a href="#" class="adress__social--link">
+                            <svg width="21" height="22" viewBox="0 0 21 22">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79993 0.684082H15.1999C18.1999 0.684082 20.6999 3.25026 20.6999 6.32967V15.9272C20.6999 19.0066 18.1999 21.5728 15.1999 21.5728H5.79993C2.79993 21.5728 0.299927 19.0066 0.299927 15.9272V6.32967C0.299927 3.19893 2.79993 0.684082 5.79993 0.684082ZM15.9499 4.32805C16.5999 4.32805 17.0999 4.89261 17.0999 5.50849C17.0999 6.1757 16.5499 6.68893 15.9499 6.68893C15.2499 6.68893 14.7999 6.12437 14.7999 5.50849C14.7999 4.89261 15.2999 4.32805 15.9499 4.32805ZM10.4999 5.40585C13.5499 5.40585 16.0999 8.02334 16.0999 11.1028C16.0999 14.2335 13.5499 16.7997 10.5499 16.7997H10.4999C7.49993 16.7997 4.99993 14.2335 4.99993 11.1028C4.99993 8.02334 7.44993 5.40585 10.4999 5.40585ZM10.4999 7.35614C12.5499 7.35614 14.1999 9.04981 14.1999 11.1028C14.1999 13.207 12.5499 14.9007 10.5499 14.9007H10.4999C8.49994 14.9007 6.84993 13.207 6.84993 11.1028C6.84993 9.04981 8.49994 7.35614 10.4999 7.35614ZM5.84993 2.4804H15.1499C17.2499 2.4804 18.9499 4.2254 18.9499 6.38099V15.8758C18.9499 18.0314 17.2499 19.7764 15.1499 19.7764H5.84993C3.74993 19.7764 2.04993 18.0314 2.04993 15.8758V6.38099C2.04993 4.2254 3.74993 2.4804 5.84993 2.4804Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="adress__social--link">
+                            <svg width="13" height="23" viewBox="0 0 13 23">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.04999 22.6504H8.24998V12.6936H11.35L11.95 8.69037H8.24998V5.66228C8.24998 4.53316 9.29998 3.91728 10.3 3.91728H12.1V0.581243L8.84998 0.427272C5.74999 0.221978 4.04999 2.73683 4.04999 5.7136V8.69037H0.5V12.6936H4.04999V22.6504Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="modal fade" id="modal_brand" aria-hidden="true" aria-labelledby="modal_brandLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1 class="pt-0 mb-0">Помоги нам с названием сервиса и получи в подарок ваучер на 100 лей </h1>
+            </div>
+            <div class="modal-footer">
+              <a class="btn py-2 px-4" style="color:#fff;background-color:#E2001A;border-radius: 15px;" href="https://mrqz.me/610fa30dfb818500400f2e67">Старт</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.8935041720306!2d28.82460131595757!3d47.02269537915027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c32dfee11ab%3A0x488960ef81babed7!2sStrada%20Mitropolit%20Gavriil%20B%C4%83nulescu-Bodoni%2033%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e0!3m2!1sen!2sua!4v1608495605228!5m2!1sen!2sua"
+        width="600" height="750" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        
+
+        (function () {
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('burger_active');
+                $(".nav-menu").toggleClass('opacity');
+                $("section").toggleClass('blur');
+                $(".adress").toggleClass('blur');
+                $("iframe").toggleClass('blur');
+                $(".header-logo").toggleClass('head-disp');
+                $("body").toggleClass('overlow');
+            });
+        }());
+        (function () {
+            const consult = document.querySelector('.consult-btn-wrp');
+            //const consult2 = document.querySelector('.consult-btn-wrp-2');
+            /* const consult3 = document.querySelector('.consult-btn-wrp-2-adapt'); */
+            const closeWrp = document.querySelector('.close-cont');
+            const submForm = document.querySelector('.subm-form');
+            const closeCont = document.querySelector('.close-cont-2');
+            consult.addEventListener('click', () => {
+                $(".og").toggleClass('op-back');
+                $(".consult").toggleClass('opct');
+                $("body").toggleClass('overlow');
+            });
+            /* consult2.addEventListener('click', () => {
+                $(".og").toggleClass('op-back');
+                $(".consult").toggleClass('opct');
+                $("body").toggleClass('overlow');
+            }); */
+            /* consult3.addEventListener('click', () => {
+                $(".og").toggleClass('op-back');
+                $(".consult").toggleClass('opct');
+                $("body").toggleClass('overlow');
+            }); */
+            closeWrp.addEventListener('click', () => {
+                $(".og").toggleClass('op-back');
+                $(".consult").toggleClass('opct');
+                $("body").toggleClass('overlow');
+            });
+            submForm.addEventListener('click', () => {
+                $(".consult").toggleClass('opct');
+                $(".succses").toggleClass('opct');
+            });
+            closeCont.addEventListener('click', () => {
+                $(".succses").toggleClass('opct');
+                $("body").toggleClass('overlow');
+                $(".og").toggleClass('op-back');
+            });
+        }());
+        var countDownDate = new Date("Jun 5, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        /* var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "  :  " + hours + "  :  " + minutes;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000); */
+        // sticky
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LchdegUAAAAAMt_ESbsU74vqkvcve8iZxvEJVGK"></script> -->
+    
+    <!-- <script>
+        /**
+         * reCaptcha.
+         * Security send form
+         * @link https://developers.google.com/recaptcha/docs/v3
+         */
+        var siteKey = '6LchdegUAAAAAMt_ESbsU74vqkvcve8iZxvEJVGK';
+        var selectForm = 'form';
+        var reCaptcha = document.createElement('script');
+        reCaptcha.src = "https://www.google.com/recaptcha/api.js?render="+siteKey;
+        $(selectForm).prepend('<input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response"></input>');
+        $('head')[0].append(reCaptcha); // Doom Element
+        reCaptcha.onload = function() {
+            //Function default reCaptcha
+            grecaptcha.ready(function() {
+                grecaptcha.execute(siteKey, {
+                    action: 'homepage'
+                }).then(function(token) {
+                    // console.log(token);
+                    $('.g-recaptcha-response').attr("value", token);
+                });
+            });
+        };
+    </script> -->
+    <!-- start js -->
+    <script src="js/fresco.min.js"></script>
+    <!-- <script src="../js/JivoChat.js"></script> -->
+    <!-- Facebook Pixel Code -->
+    <!-- <script src="../js/FacebookPixel.js"></script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=185946301892333&ev=PageView&noscript=1" alt="" /></noscript> -->
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <!-- <script src="../js/GoogleAnalytics.js"></script> -->
+    <!-- Google Tag Manager -->
+    <!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5DN6CJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script src="../js/GoogleTagManager.js"></script> -->
+    <!-- End Google Tag Manager -->
+    <!-- Yandex Metrica Code -->
+    <!-- <script src="../js/metrika.yandex.js"></script> -->
+
+    <script src="js/main.js"></script>
+    <!-- DO NOT MODIFY -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function(){ $('#modal_brand').modal('show'); }, 30000);
+    </script> -->
+</body>
+
+</html>
