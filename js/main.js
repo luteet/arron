@@ -176,21 +176,6 @@ function popup(arg) {
                 }, duration)
             });
         })
-        
-
-        /* popupCloseBtn.forEach(element => {
-            element.addEventListener('click', function () {
-                if (document.querySelectorAll('._popup._active').length <= 1) {
-                    removeFunc(popup, true);
-                } else {
-                    removeFunc(popup, false);
-                }
-                setTimeout(function () {
-                    return false;
-                }, duration)
-            });
-        }) */
-
 
 
         setTimeout(() => {
@@ -203,6 +188,8 @@ function popup(arg) {
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </popup> -=-=-=-=-=-=-=-=-=-=-=-=
 
+
+// =-=-=-=-=-=-=-=-=-=-=-=- <sliders> -=-=-=-=-=-=-=-=-=-=-=-=
 
 $('.add-contacts__slider--list').slick({
     infinite: true,
@@ -226,8 +213,7 @@ $('.work-slide').slick({
     appendArrows: $('.work-slide-nav'),
     prevArrow: '<button type="button" class="slick-prev slider-arrow _prev"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M15 18.707L9 12.707L15 6.70703" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     nextArrow: '<button type="button" class="slick-next slider-arrow _next"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M9 18.707L15 12.707L9 6.70703" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-    /* prevArrow: '<img class="arrow-work" src="img/arrow-left-2.png" alt="arrow">',
-    nextArrow: '<img class="arrow-work" src="img/arrow-right-2.png" alt="arrow">', */
+    
 });
 
 $('.slider-reviews').slick({
@@ -315,11 +301,18 @@ $('.devices-list-adapt').slick({
     ]
 });
 
+// =-=-=-=-=-=-=-=-=-=-=-=- </sliders> -=-=-=-=-=-=-=-=-=-=-=-=
 
 
 let thisTarget;
 body.addEventListener('click', function (e) {
     thisTarget = e.target;
+
+
+
+
+
+
 
 
     let previewVideo = thisTarget.closest('._video-poster');
@@ -372,6 +365,8 @@ body.addEventListener('click', function (e) {
 
 
 
+
+
     let popupOpen = thisTarget.closest('._btn-open-popup');
     if (popupOpen) {
         e.preventDefault();
@@ -382,6 +377,9 @@ body.addEventListener('click', function (e) {
             body: body,
         })
     }
+
+
+
 
 
 
@@ -401,29 +399,13 @@ body.addEventListener('click', function (e) {
     }
 
 
+
+
+
+
+
+
 })
 
 
-/* let resizeCheck = {};
-function resizeCheckFunc(size, minWidth, maxWidth) {
-    if (windowSize >= size && (resizeCheck[String(size)] == false || resizeCheck[String(size)] == undefined)) {
-        resizeCheck[String(size)] = true;
 
-        minWidth(); // > size
-
-    } else if (windowSize <= size && (resizeCheck[String(size)] == true || resizeCheck[String(size)] == undefined)) {
-        resizeCheck[String(size)] = false;
-        maxWidth(); // < size
-
-    }
-}
-
-function resize() {
-    resizeCheckFunc(992, 
-    function () {
-        $('.add-contacts__slider--list').slick(addContactsGallery);
-    },
-    function () {
-        $('.add-contacts__slider--list').slick(addContactsGallery);
-    })
-} */
