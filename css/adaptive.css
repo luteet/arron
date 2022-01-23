@@ -105,11 +105,16 @@
 
     ._popup-body {
         max-width: 500px;
-        min-height: 446px;
+        
     }
 
     .consult-popup__form {
         padding: 40px;
+        min-height: 435px;
+    }
+
+    .succses-popup__content {
+        min-height: 435px;
     }
 
     
@@ -231,6 +236,13 @@
     .present__item {
         flex: 0 1 50%;
         padding: 5px;
+    }
+
+
+
+
+    .consult-submit {
+        width: auto;
     }
 
 
@@ -620,9 +632,7 @@
     .text-main-triangle{
         right: -20%;
     }
-    .devices{
-        /* margin-top: -223px; */
-    }
+    
     .about-section-cont-wrp{
         width: 90%;
     }
@@ -1582,14 +1592,9 @@
         opacity: 1;
     }
     .burger-wrp{
-        /* margin-left: auto; */
         right: 10px;
     }
     .sticky{
         left: 0;
-    }
-    .sticky .burger-wrp {
-        /* right: 0px; */
-        /* transform: translate(-0px,0); */
     }
 }

@@ -388,6 +388,12 @@ body.addEventListener('click', function (e) {
     let counsultSubmit = thisTarget.closest('.consult-popup__form--submit');
     if(counsultSubmit) {
         e.preventDefault();
+        const popupActive = document.querySelector('._popup._active');
+        if(popupActive) {
+            const closePopup = popupActive.querySelector('._popup-close');
+            if(closePopup) closePopup.click();
+        }
+
         if(document.querySelector('#succses-popup')) {
             popup({
                 id: '#succses-popup',

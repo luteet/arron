@@ -1,0 +1,17 @@
+body {
+    --light-body: #222;
+    --dark-text: #FFF;
+    --light: #333;
+    --header-light: #333;
+    --header-shadow: #111;
+    --gray-text: #999;
+    --gray-text-2: #9c9c9c;
+    --accent-to-white: #FFF;
+    --btn-bg: rgba(51, 51, 51, 0.5);
+
+    --opacity: 0.3;
+
+    --bg-gradient: linear-gradient(180deg, #292929 0%, rgba(235, 243, 248, 0) 100%);
+
+    --procent-bg: #222;
+}
